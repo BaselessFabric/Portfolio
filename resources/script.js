@@ -21,7 +21,6 @@ const darkMode = () => {
         }
 
         document.getElementById("button").style.color = "black";
-
     }
 };
 
