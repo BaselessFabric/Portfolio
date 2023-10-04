@@ -1,97 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="resources/style.css" />
+        <script
+            src="https://kit.fontawesome.com/4c79f40244.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="resources/script.js" defer></script>
+        <title>Alex Walls - Developer</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="resources/style.css">
-    <script src="https://kit.fontawesome.com/4c79f40244.js" crossorigin="anonymous"></script>
-    <script src="resources/script.js" defer></script>
-    <title>Alex Walls - Developer - Contact Me</title>
-</head>
+    <body>
+        <header>
+            <h2 class="logo">Alex Walls</h2>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Me</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
 
-<body>
+                    <li id="button">Toggle Dark Mode!</li>
+                </ul>
+            </nav>
+        </header>
 
-    <header>
-        <h2 class="logo">Alex Walls</h2>
-        <nav>
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href=index.html#about>About Me</a></li>
-                <li><a href=index.html#projects>Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-
-                <li id="button">Toggle Dark Mode!</li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="about" id="about">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid optio quam et veniam saepe
-                    obcaecati.
-                    Qui maxime nobis deleniti quam aliquam ab labore porro dolores dolor minus. Suscipit, recusandae
-                    sit?
-                </p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta totam eos praesentium
-                    voluptatem
-                    nam qui, minus quo possimus dolor incidunt, obcaecati, aliquid temporibus? Laudantium sit tempora ex
-                    iste molestiae.
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem molestias, debitis tenetur
-                    ab
-                    nobis quis velit libero saepe exercitationem asperiores aliquid! Nemo, minus tenetur similique ad
-                    cum
-                    est dicta.
-                </p>
-            </div>
-            <img src="resources/images/IMG_20181209_141746899.jpeg">
-        </section>
-
-        <section class="projects" id="projects">
-            <h2>Projects</h2>
-
-            <div class="project-container">
-                <div class="project">
-                    <img src="resources/images/Screenshot 2022-01-10 at 14.37.17.png">
-                    <h3>Bunch Of Uncles Leasing Company</h3>
-                    <p>Whilst learning, I was tasked with creating a fake company page that demonstrated the use of
-                        flex-box and responsive design. The outcome was a fun pretend company whose service was to rent
-                        out uncles.</p>
-                    <p>I learned a lot from building this page from scratch, having repeated eureka moments.</p>
+        <main>
+            <section class="about" id="about">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a professional full-stack web developer working
+                        with modern JavaScript frameworks to create bespoke
+                        solutions.
+                    </p>
+                    <p>
+                        I've worked on a number of different projects after
+                        teaching myself the skills required to produce
+                        high-quality, responsive and well tested websites.
+                    </p>
+                    <p>
+                        Please see below a short introduction to some of the
+                        projects I have been working on recently.
+                    </p>
                 </div>
-                <div class="project">
-                    <img src="resources/images/Screenshot 2022-01-10 at 14.37.17.png">
-                    <p>Lorem ipsum</p>
+                <img src="resources/images/IMG_20181209_141746899.jpeg" />
+            </section>
+
+            <section class="projects" id="projects">
+                <h2>Projects</h2>
+
+                <div class="project-container">
+                    <div class="project">
+                        <a href="https://wanderingelixirs.com/">
+                            <img
+                                src="resources/images/Screenshot 2023-05-29 at 16.08.32.png"
+                            />
+                        </a>
+                        <h3>Wandering Elixirs</h3>
+                        <p>
+                            This is an online store built for a client to sell
+                            herbal medicines and mushroom tinctures.
+                        </p>
+                        <p>
+                            The backend is powered by a strapi server, accesable
+                            to the client, which allows them to add, remove and
+                            edit the products to be displayed on the website.
+                            The frontend is built using React, with Redux
+                            managing state for the shopping cart.
+                        </p>
+                        <p>
+                            The checkout is integrated using Stripe, and
+                            includes a webhook which enables a stock management
+                            system to be updated, preventing the user from
+                            ordering a product that is out of stock.
+                        </p>
+                        <p>
+                            The style is primarily coded in JavaScript using the
+                            MUI react component library, instead of referenced
+                            style sheets
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a
+                            href="https://baselessfabric.github.io/MinimalReddit/"
+                        >
+                            <img
+                                src="resources/images/Screenshot 2022-01-10 at 14.37.17.png"
+                            />
+                        </a>
+                        <h3>Minimal Reddit</h3>
+                        <p>This is a minimal version of a Reddit Client.</p>
+                        <p>
+                            It was built using React for the frontend and Redux
+                            Toolkit to manage the state of the search bar
+                        </p>
+                        <p>
+                            It shows whichever recent posts from the subreddit
+                            the user suibmits in the search bar.
+                        </p>
+                        <p>
+                            It utilises a fetch request with Redux for a simple,
+                            responsive single-page web application
+                        </p>
+                    </div>
                 </div>
+            </section>
+        </main>
 
-
+        <footer>
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-chrome"></i>
+                <i class="fab fa-node"></i>
+                <i class="fab fa-python"></i>
+                <i class="fab fa-npm"></i>
+                <i class="fas fa-terminal"></i>
             </div>
-
-        </section>
-
-
-
-    </main>
-
-    <footer>
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js-square"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-chrome"></i>
-            <i class="fab fa-node"></i>
-            <i class="fab fa-python"></i>
-            <i class="fab fa-npm"></i>
-            <i class="fas fa-terminal"></i>
-        </div>
-    </footer>
-
-</body>
-
+        </footer>
+    </body>
 </html>
