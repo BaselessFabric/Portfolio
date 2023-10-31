@@ -73,6 +73,7 @@ nav ul li {
 .project p {
     width: 380px;
     margin: 0;
+    padding-bottom: 1em;
 }
 
 .skills-container {
