@@ -1,14 +1,14 @@
+/* Base styles */
 a {
     text-decoration: none;
     color: black;
 }
 
 body {
-    display: flex;
     font-family: "Open Sans", sans-serif;
-    max-width: 900px;
-    flex-direction: column;
     margin: 0 auto;
+    max-width: 900px;
+    padding: 0 20px; /* Added padding for smaller screens */
     background-color: white;
 }
 
@@ -24,116 +24,128 @@ nav {
 
 nav ul {
     display: flex;
-    align-items: center;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Allow nav items to wrap */
 }
 
 nav ul li {
     margin-left: 20px;
 }
 
-.about {
+.about,
+.projects {
     display: flex;
+    align-items: center; /* Center content for smaller screens */
     margin-bottom: 20px;
-    justify-content: space-between;
-}
-
-.about img {
-    width: 200px;
-    height: auto;
-    margin-top: 30px;
-    border-radius: 20px;
 }
 
 .projects {
-    margin-bottom: 20px;
+    flex-direction: column; /* Stack elements on smaller screens */
 }
 
-.projects h2 {
-    text-align: center;
+.about img,
+.project img {
+    height: auto;
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.about img {
+    max-width: 30%;
 }
 
 .project-container {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap; /* Allow projects to wrap */
     justify-content: center;
 }
 
-.project img {
-    width: 400px;
-}
-
 .project {
+    width: 100%; /* Make project take full width on smaller screens */
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project p {
-    width: 380px;
-    margin: 0;
-    padding-bottom: 1em;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .skills-container {
-    font-size: 3em;
     display: flex;
-    flex: wrap;
-    width: 100%;
+    flex-wrap: wrap; /* Allow skills to wrap */
     justify-content: space-between;
+    font-size: 3em;
 }
 
 .skills-container i {
-    margin-right: 20px;
+    margin: 10px; /* Reduce margin for icons */
+}
+
+#contact {
+    display: block;
 }
 
 #contact-icons {
     font-size: 2em;
-    margin: 0;
 }
 
-footer {
-    margin-bottom: 100px;
+/* Media Queries */
+@media (min-width: 768px) {
+    .about,
+    .projects {
+        justify-content: space-between;
+    }
+
+    .about img {
+        margin-left: 30px; /* Add margin to separate text and image */
+    }
+
+    .project {
+        width: 45%; /* Adjust project width for larger screens */
+        margin: 2.5%; /* Add margins around projects */
+    }
+
+    nav ul li {
+        margin-left: 30px; /* Increase margin for larger screens */
+    }
+
+    .about-text {
+        align-self: flex-start; /* Align about section to the top */
+    }
 }
 
-/* Button */
-#button {
-    appearance: none;
-    background-color: transparent;
-    border: 2px solid #1a1a1a;
-    border-radius: 15px;
-    box-sizing: border-box;
-    color: #3b3b3b;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: normal;
-    outline: none;
-    padding: 16px 24px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
-    touch-action: manipulation;
-    will-change: transform;
+/* Responsive Fonts */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    header h2.logo,
+    nav ul li a,
+    .about h2,
+    .projects h2 {
+        font-size: 16px; /* Adjust heading sizes for readability */
+    }
 }
 
-#button:disabled {
-    pointer-events: none;
-}
+/* Additional Styles for Improved Responsiveness */
+@media (max-width: 480px) {
+    nav ul {
+        align-items: center;
+    }
 
-#button:hover {
-    color: #fff;
-    background-color: #1a1a1a;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-}
+    nav li {
+        display: none;
+    }
 
-#button:active {
-    box-shadow: none;
-    transform: translateY(0);
-}
+    #profile-pic {
+        max-width: 50%;
+    }
 
-.dark-mode {
-    background-color: black;
+    .about,
+    .projects {
+        flex-direction: column; /* Stack elements on smaller screens */
+    }
+
+    .skills-container i {
+        margin: 5px; /* Further reduce margin for skill icons on very small screens */
+    }
 }

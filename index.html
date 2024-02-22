@@ -1,136 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="resources/style.css" />
-        <script
-            src="https://kit.fontawesome.com/4c79f40244.js"
-            crossorigin="anonymous"
-        ></script>
-        <script src="resources/script.js" defer></script>
-        <title>Alex Walls - Developer</title>
-    </head>
 
-    <body>
-        <header>
-            <h2 class="logo">Alex Walls</h2>
-            <nav>
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About Me</a></li>
-                    <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="resources/style.css" />
+    <script src="https://kit.fontawesome.com/4c79f40244.js" crossorigin="anonymous"></script>
+    <script src="resources/script.js" defer></script>
+    <title>Alex Walls - Developer</title>
+</head>
 
-                    <li id="button">Toggle Dark Mode!</li>
-                </ul>
-            </nav>
-        </header>
+<body>
+    <header>
+        <h2 class="logo">Alex Walls</h2>
+        <nav>
+            <ul class="nav">
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li id="contact"><a href="https://github.com/BaselessFabric">GitHub</a></li>
+                <li id="contact"><a href="https://www.linkedin.com/in/alexanderwalls/">LinkedIn</a></li>
+                <li id="contact"><a href="contact.html">Contact Me</a></li>
 
-        <main>
-            <section class="about" id="about">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>
-                        I am a professional full-stack web developer working
-                        with modern JavaScript frameworks to create bespoke
-                        solutions.
-                    </p>
-                    <p>
-                        I've worked on a number of different projects after
-                        teaching myself the skills required to produce
-                        high-quality, responsive and well tested websites.
-                    </p>
-                    <p>
-                        Please see below a short introduction to some of the
-                        projects I have been working on recently.
-                    </p>
-                </div>
-                <img src="resources/images/profile.jpeg" />
-            </section>
+                <!-- <li id="button">Toggle Dark Mode!</li> -->
+            </ul>
+        </nav>
+    </header>
 
-            <section class="projects" id="projects">
-                <h2>Projects</h2>
-
-                <div class="project-container">
-                    <div class="project">
-                        <a href="https://wanderingelixirs.com/">
-                            <img src="resources/images/wandering.jpeg" />
-                        </a>
-                        <h3>Wandering Elixirs</h3>
-                        <p>
-                            This project is a custom-designed e-commerce
-                            platform tailored for a client in the herbal
-                            medicine and mushroom tincture niche.
-                        </p>
-                        <p>
-                            On the backend, the site leverages Strapi, offering
-                            the client an intuitive interface to seamlessly
-                            manage product inventory—enabling add, edit, and
-                            delete functionalities. The frontend employs ReactJS
-                            for a responsive user experience, with Redux
-                            overseeing the state management of the shopping
-                            cart.
-                        </p>
-                        <p>
-                            For payment processing, the platform integrates
-                            Stripe's secure checkout system. A specialized
-                            webhook is also incorporated to sync with the
-                            inventory management system, thereby eliminating the
-                            possibility of customers ordering out-of-stock
-                            items.
-                        </p>
-                        <p>
-                            In terms of aesthetics, the styling is executed
-                            through JavaScript using Material-UI (MUI) React
-                            components, negating the need for external
-                            stylesheets.
-                        </p>
-                    </div>
-                    <div class="project">
-                        <a
-                            href="https://baselessfabric.github.io/MinimalReddit/"
-                        >
-                            <img src="resources/images/reddit.jpeg" />
-                        </a>
-                        <h3>Minimal Reddit</h3>
-                        <p>
-                            This project is a streamlined Reddit client,
-                            designed to offer a simplified, yet effective, user
-                            experience.
-                        </p>
-                        <p>
-                            Built on a ReactJS frontend, the application employs
-                            the Redux Toolkit to handle the state management of
-                            the search functionality. Users can easily search
-                            for and view recent posts from any subreddit of
-                            their choice, all through a straightforward search
-                            bar interface.
-                        </p>
-                        <p>
-                            By utilizing asynchronous fetch requests in tandem
-                            with Redux, the client delivers a responsive and
-                            efficient single-page web application.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js-square"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-chrome"></i>
-                <i class="fab fa-node"></i>
-                <i class="fab fa-python"></i>
-                <i class="fab fa-npm"></i>
-                <i class="fas fa-terminal"></i>
+    <main>
+        <section class="about" id="about">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I am a graduate Software Engineer, specialising in web design and development.
+                </p>
+                <p>
+                    I use modern technologies to deliver bespoke solutions to my clients.
+                </p>
+                <p>
+                    Below is a brief introduction to some of the
+                    projects I have been working on recently.
+                </p>
             </div>
-        </footer>
-    </body>
+            <img id="profile-pic" src="resources/images/profile.jpeg" />
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-container">
+                <div class="project">
+                    <a href="https://wanderingelixirs.com/">
+                        <img src="resources/images/wandering.jpeg" />
+                    </a>
+                    <h3>Wandering Elixirs</h3>
+                    <p>
+                        This project is a custom-designed e-commerce
+                        platform tailored for a client in the herbal
+                        medicine and mushroom tincture niche.
+                    </p>
+                    <p>
+                        On the backend, the site leverages Strapi, offering
+                        the client an intuitive interface to seamlessly
+                        manage product inventory—enabling add, edit, and
+                        delete functionalities. The frontend employs ReactJS
+                        for a responsive user experience, with Redux
+                        overseeing the state management of the shopping
+                        cart.
+                    </p>
+                    <p>
+                        For payment processing, the platform integrates
+                        Stripe's secure checkout system. A specialized
+                        webhook is also incorporated to sync with the
+                        inventory management system, thereby eliminating the
+                        possibility of customers ordering out-of-stock
+                        items.
+                    </p>
+                    <p>
+                        In terms of aesthetics, the styling is executed
+                        through JavaScript using Material-UI (MUI) React
+                        components, negating the need for external
+                        stylesheets.
+                    </p>
+                </div>
+                <div class="project">
+                    <a href="https://baselessfabric.github.io/MinimalReddit/">
+                        <img src="resources/images/reddit.jpeg" />
+                    </a>
+                    <h3>Minimal Reddit</h3>
+                    <p>
+                        This project is a streamlined Reddit client,
+                        designed to offer a simplified, yet effective, user
+                        experience.
+                    </p>
+                    <p>
+                        Built on a ReactJS frontend, the application employs
+                        the Redux Toolkit to handle the state management of
+                        the search functionality. Users can easily search
+                        for and view recent posts from any subreddit of
+                        their choice, all through a straightforward search
+                        bar interface.
+                    </p>
+                    <p>
+                        By utilizing asynchronous fetch requests in tandem
+                        with Redux, the client delivers a responsive and
+                        efficient single-page web application.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-chrome"></i>
+            <i class="fab fa-node"></i>
+            <i class="fab fa-python"></i>
+            <i class="fab fa-npm"></i>
+            <i class="fas fa-terminal"></i>
+        </div>
+    </footer>
+</body>
+
 </html>
